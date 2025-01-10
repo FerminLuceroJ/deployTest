@@ -71,9 +71,9 @@ public class AppLibros {
 				configOverrides.put("javax.persistence.jdbc.url", value);
 				configOverrides.put("javax.persistence.jdbc.user", username);
 				configOverrides.put("javax.persistence.jdbc.password", password);
-				configOverrides.put("javax.persistence.jdbc.driver", "com.mysql.jdbc.Driver");
+				//configOverrides.put("javax.persistence.jdbc.driver", "com.mysql.jdbc.Driver");
 				
-				//  configOverrides.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
+				configOverrides.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
 			}
 			// no se pueden poner variables de entorno con "." en la key
 			String key2 = key.replace("__",".");
