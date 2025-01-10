@@ -67,7 +67,7 @@ public class AppLibros {
 				String username = dbUri.getUserInfo().split(":")[0];
 				String password = dbUri.getUserInfo().split(":")[1];
 				//javax.persistence.jdbc.url=jdbc:postgresql://localhost/dblibros
-				value = "jdbc:mysql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();// + "?sslmode=require";
+				value = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();// + "?sslmode=require";
 				configOverrides.put("javax.persistence.jdbc.url", value);
 				configOverrides.put("javax.persistence.jdbc.user", username);
 				configOverrides.put("javax.persistence.jdbc.password", password);
